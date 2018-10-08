@@ -1,8 +1,28 @@
-<view class='container'>
-    <text>本周推荐</text>
-    <image src='{{thisWeekMoive.imagePath}}'></image>
-    <text>{{thisWeekMoive.name}}</text>
-    <text>点评：{{thisWeekMoive.comment}}</text>
-    <!-- <text>{{ (score >=60)?"及格":"不及格" }}</text> -->
-    <text wx:if="{{ thisWeekMoive.isHighlyRecommended }}" style="font-size:16px; color:red;">强烈推荐</text>
+<!-- <text>本周推荐</text> -->
+<!-- <view class=''>
+  <view class='movie' wx:for="{{weeklyMovieList}}">
+    <image class='movie-image' src='{{item.imagePath}}'></image>
+    <view class='movie-details'>
+        <text>第{{index+1}}周：{{item.name}}</text>
+    <text>点评：{{item.comment}}</text>
+    <text wx:if="{{item.isHighlyRecommended }}" style="font-size:16px; color:red;">强烈推荐</text>
+    </view>
+  </view>
+</view> -->
+
+<!-- <text>{{ (score >=60)?"及格":"不及格" }}</text> -->
+
+<view class=''>
+<swiper class='movie-swiper' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}"
+previous-margin="50rpx" next-margin='50rpx'
+>
+  <swiper-item class='movie' wx:for="{{weeklyMovieList}}">
+  <view class="container movie-card">
+    <image class='movie-image' src='{{item.imagePath}}'></image>
+        <text>第{{index+1}}周：{{item.name}}</text>
+    <text class='movie-txt'>点评：{{item.comment}}</text>
+    <text wx:if="{{item.isHighlyRecommended }}" style="font-size:16px; color:red;">强烈推荐</text>
+    </view>
+  </swiper-item>
+  </swiper>
 </view>
