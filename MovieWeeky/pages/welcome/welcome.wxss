@@ -1,0 +1,15 @@
+text {
+    display: block;
+    text-align: center;
+}
+images,text{
+    margin-bottom: 30px;
+    margin-left:10px;
+}
+.about-banner{
+  width: 187.5px;
+  height:187.5px;
+  border:1px solid rgb(0, 0, 0);
+  /* margin-left:calc(50% - 187.5px / 2); */
+  border-radius:50%; 
+}

@@ -1,0 +1,8 @@
+<view>Hello {{name}}!</view>
+<button bindtap="changeName">Click me!</button>
+<view>
+    <image  class='about-banner' src="/images/simba.jpg"></image>
+    <text class="banner" style="font-weight:bold;font-size:26px;">电影周周看</text>
+    <text>每周推荐一部好片</text>
+    <text>我的微博：weibo.com/simba</text>
+</view>
