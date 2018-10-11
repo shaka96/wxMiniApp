@@ -1,6 +1,14 @@
 
 
+需求一：
 
+需求二：
+非本周幻灯片页添加“返回本周”按钮
+
+ 不能直接在data中设置：currentIndex: weeklyMovieList.length -1,
+会编译错误：“weeklyMovieList is not defined 
+ ReferenceError: weeklyMovieList is not defined”。
+ 
 ### 文本换行
 P标签是默认是自动换行的
 ```

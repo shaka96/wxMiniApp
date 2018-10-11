@@ -15,6 +15,7 @@
 <view class=''>
 <swiper class='movie-swiper' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}"
 previous-margin="50rpx" next-margin='50rpx'
+current='{{ currentIndex }}'
 >
   <swiper-item class='movie' wx:for="{{weeklyMovieList}}">
   <view class="container movie-card">
@@ -22,6 +23,8 @@ previous-margin="50rpx" next-margin='50rpx'
         <text>第{{index+1}}周：{{item.name}}</text>
     <text class='movie-txt'>点评：{{item.comment}}</text>
     <text wx:if="{{item.isHighlyRecommended }}" style="font-size:16px; color:red;">强烈推荐</text>
+
+    <text bindtap='f0' wx:if="{{ index < (weeklyMovieList.length -1) }}" class="return-button">返回本周</text>
     </view>
   </swiper-item>
   </swiper>

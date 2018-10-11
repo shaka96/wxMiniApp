@@ -3,4 +3,8 @@ var aboutData = {
 };
 
 Page({
+    data: { },
+    onUnload: function (e) {
+        console.log('onUnload:', e);
+    }
 })
