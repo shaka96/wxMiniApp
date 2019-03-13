@@ -6,6 +6,7 @@
 // check.js
 // http://www.wxapp-union.com/article-2051-1.html
 'use strict';
+const Port = '8088';
 const http = require('http');
 const url = require('url');
 const querystring = require('querystring');
@@ -29,6 +30,6 @@ http.createServer((req, res) => {
       res.end(echostr);
     }
   }
-}).listen(8080, () => {
-  console.log(`server start at 8080`);   // 一定要是80端口
+}).listen(Port, () => {
+  console.log(`server start at ${Port}`);   // 一定要是80端口
 });
