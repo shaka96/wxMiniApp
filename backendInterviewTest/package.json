@@ -1,0 +1,17 @@
+{
+  "name": "wxapp-backend",
+  "version": "0.0.0",
+  "description": "wxapp, authority backend",
+  "main": "wxAuthorityServer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "weixin",
+    "App",
+    "Authority",
+    "backend"
+  ],
+  "author": "aryan.chen",
+  "license": "ISC"
+}
