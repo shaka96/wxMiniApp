@@ -1,0 +1,10 @@
+.ctx {
+    width:80%;
+    height: 100%;
+
+};
+.cardDetail {
+    display: none;
+    width: 80%;
+    height: 100%;
+}

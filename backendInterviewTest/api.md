@@ -35,7 +35,8 @@ HTTP请求方式:
     POST/FROMURL:https://api.weixin.qq.com/cgi-bin/media/uploadimg?access_token=ACCESS_TOKEN
 
 ## 步骤三 创建卡券
-
+明确卡券ID与Code码的区别
+>创建卡券成功后获取卡券ID，一个卡券ID代表一类卡券，包含相应库存数量的Code码。
 接口地址：[创建卡券接口](https://mp.weixin.qq.com/wiki?t=resource/res_main&id=mp1451025056)
 
 HTTP请求方式:

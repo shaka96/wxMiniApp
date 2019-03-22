@@ -15,9 +15,11 @@
   "author": "aryan.chen",
   "license": "ISC",
   "dependencies": {
-    "querystring": "^0.2.0",
     "crypto": "^1.0.1",
     "http": "0.0.0",
-    "url": "^0.11.0"
+    "querystring": "^0.2.0",
+    "url": "^0.11.0",
+    "wafer-node-sdk": "^1.4.5",
+    "wechat-card": "^1.0.8"
   }
 }
